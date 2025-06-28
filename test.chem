@@ -1,0 +1,52 @@
+//🧪 Chemical Head Syntax (robust like rust, simple like python)
+
+//A chaos-stabilized control script for your robot
+
+
+//☣️ Constants
+//Constants are immutable and globally scoped
+
+chain CONST SPEED: int = 5;
+chain CONST PI: float = 3.1415;
+chain CONST NAME: str = "Chemical Head";
+
+
+//🧬 Variable declaration (explicit + owned)
+
+chain speed: int = 10;
+chain distance: float = speed * 2.5;
+chain active: bool = true;
+
+//🔊 Print to console
+
+yell "Booting up: " + NAME;
+yell "Speed set to: " + speed;
+
+
+//🧬 Function: Reaction block
+
+react compute_momentum(velocity: int, mass: float) -> float {
+    chain momentum: float = velocity * mass;
+    yell "Momentum: " + momentum;
+    return momentum;
+}
+
+
+//🧠 Conditional execution
+
+if speed > SPEED {
+    yell "⚠️ Overclocking!";
+} else {
+    yell "Running at safe speed.";
+}
+
+
+//🔁 Looping like a centrifuge
+
+chain i: int = 0;
+while i < 3 {
+    yell "Cycling reactor: " + i;
+    i = i + 1;
+}
+
+
